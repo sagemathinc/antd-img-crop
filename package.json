@@ -1,7 +1,7 @@
 {
-  "name": "antd-img-crop",
-  "version": "4.5.2",
-  "description": "An image cropper for Ant Design Upload",
+  "name": "@cocalc/antd-img-crop",
+  "version": "4.5.5",
+  "description": "An image cropper for Ant Design Upload (forked to fix commonjs support)",
   "keywords": [
     "react",
     "antd",
@@ -13,17 +13,15 @@
   ],
   "license": "MIT",
   "author": "nanxiaobei <nanxiaobei@gmail.com> (https://github.com/nanxiaobei)",
-  "homepage": "https://github.com/nanxiaobei/antd-img-crop",
-  "repository": "github:nanxiaobei/antd-img-crop",
-  "bugs": "https://github.com/nanxiaobei/antd-img-crop/issues",
-  "main": "dist/antd-img-crop.cjs.js",
+  "homepage": "https://github.com/sagemathinc/antd-img-crop",
+  "repository": "github:sagemathinc/antd-img-crop",
+  "bugs": "https://github.com/sagemathinc/antd-img-crop/issues",
+  "main": "dist/dummy.js",
   "module": "dist/antd-img-crop.esm.js",
   "types": "dist/antd-img-crop.d.ts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
-    "build": "rollup -c --configPlugin @rollup/plugin-typescript"
+    "build": "rollup -c --configPlugin @rollup/plugin-typescript && cp dummy.js dist"
   },
   "peerDependencies": {
     "antd": ">=4.0.0",
